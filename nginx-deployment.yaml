@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: fadmaro-deployment
   namespace: fadmaro
   labels:
-    app: nginx
+    app: fadmaro
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: fadmaro
   template:
     metadata:
       labels:
-        app: nginx
+        app: fadamaro
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: fadmaro
+        image: fadmaro/flask:metrics
         ports:
-        - containerPort: 80
+        - containerPort: 8080
