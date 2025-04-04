@@ -19,4 +19,4 @@ spec:
       - name: fadmaro
         image: fadmaro/flask:0.0.5
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
