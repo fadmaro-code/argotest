@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: fadamaro
+        app: fadmaro
     spec:
       containers:
       - name: fadmaro
