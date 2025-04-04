@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: fadmaro
-        image: fadmaro/flask:metrics
+        image: fadmaro/flask:0.0.5
         ports:
         - containerPort: 8080
